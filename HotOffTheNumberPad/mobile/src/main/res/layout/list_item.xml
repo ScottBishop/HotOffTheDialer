@@ -8,7 +8,7 @@
     android:background="@drawable/list_view_selector"
     android:layout_height="wrap_content">
 
-    <com.scottbishop.hotoffthenumberpad.CircularImageView
+    <com.scottbishop.hotoffthedialer.commons.CircularImageView
         android:id="@+id/image"
         android:layout_width="56dp"
         android:layout_height="56dp"

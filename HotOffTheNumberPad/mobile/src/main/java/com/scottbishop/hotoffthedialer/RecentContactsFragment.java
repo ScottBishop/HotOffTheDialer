@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthenumberpad;
+package com.scottbishop.hotoffthedialer;
 
 import android.content.ContentUris;
 import android.database.Cursor;
@@ -15,6 +15,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
+import com.scottbishop.hotoffthedialer.commons.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.Collections;

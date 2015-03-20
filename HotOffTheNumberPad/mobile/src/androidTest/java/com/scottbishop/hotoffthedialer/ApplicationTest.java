@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthenumberpad;
+package com.scottbishop.HotOffTheDialer;
 
 import android.app.Application;
 import android.test.ApplicationTestCase;

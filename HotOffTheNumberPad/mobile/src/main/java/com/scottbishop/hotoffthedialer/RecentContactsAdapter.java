@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthenumberpad;
+package com.scottbishop.hotoffthedialer;
 
 import android.content.Context;
 import android.content.Intent;
