@@ -1,6 +1,8 @@
 package com.scottbishop.hotoffthenumberpad;
 
+import android.content.Intent;
 import android.os.Bundle;
+import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
@@ -14,8 +16,11 @@ public class RecentContactsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_recent_contacts);
         ButterKnife.inject(this);
 
+        getSupportActionBar().setTitle(getString(R.string.recent_contacts));
         if (savedInstanceState == null) {
-            getSupportFragmentManager().beginTransaction().add(R.id.container, RecentContactsFragment.newInstance()).commit();
+            getSupportFragmentManager().beginTransaction()
+                                       .add(R.id.container, RecentContactsFragment.newInstance())
+                                       .commit();
         }
     }
 
@@ -33,8 +38,9 @@ public class RecentContactsActivity extends ActionBarActivity {
         // as you specify a parent activity in AndroidManifest.xml.
         int id = item.getItemId();
 
-        //noinspection SimplifiableIfStatement
-        if (id == R.id.action_settings) {
+        if (id == R.id.action_open_contacts) {
+            Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+            startActivity(intent);
             return true;
         }
 

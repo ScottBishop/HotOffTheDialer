@@ -1,22 +1,24 @@
 package com.scottbishop.hotoffthenumberpad;
 
-import android.content.Intent;
+import android.content.ContentUris;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
-import android.provider.CallLog;
 import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.widget.DefaultItemAnimator;
+import android.support.v7.widget.LinearLayoutManager;
+import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.widget.ListView;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
 
-import java.util.HashMap;
-import java.util.Map;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.List;
 
 /**
  * @author scott.bishop
@@ -24,8 +26,10 @@ import java.util.Map;
  */
 public class RecentContactsFragment extends Fragment {
 
-    @InjectView(R.id.list_view)
-    ListView listView;
+    private LinearLayoutManager layoutManager;
+
+    @InjectView(R.id.recycler_view)
+    RecyclerView recyclerView;
 
     public static RecentContactsFragment newInstance() {
         return new RecentContactsFragment();
@@ -34,6 +38,10 @@ public class RecentContactsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+        layoutManager = new LinearLayoutManager(getActivity());
+        recyclerView.setLayoutManager(layoutManager);
+        recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
+        recyclerView.setItemAnimator(new DefaultItemAnimator());
         setupRecentContactsListView();
     }
 
@@ -44,47 +52,43 @@ public class RecentContactsFragment extends Fragment {
         return rootView;
     }
 
-    private void setupRecentContactsListView() {
-        RecentContactsAdapter adapter = new RecentContactsAdapter();
-        adapter.setContacts(getRecentContacts());
-        listView.setAdapter(adapter);
+    @Override
+    public void onResume() {
+        super.onResume();
+        setupRecentContactsListView();
     }
 
-    public Map<String, String> getRecentContacts() {
-        HashMap<String, String> contactMap = new HashMap<>();
+    private void setupRecentContactsListView() {
+        RecentContactsAdapter adapter = new RecentContactsAdapter(getActivity(), getRecentContacts());
+        recyclerView.setAdapter(adapter);
+    }
 
-        Uri queryUri = android.provider.CallLog.Calls.CONTENT_URI;
+    public List<ContactInfo> getRecentContacts() {
+        List<ContactInfo> contactList = new ArrayList<>();
 
-        String[] projection = new String[] {
-                ContactsContract.Contacts._ID,
-                CallLog.Calls._ID,
-                CallLog.Calls.NUMBER,
-                CallLog.Calls.CACHED_NAME,
-                CallLog.Calls.DATE
-        };
+        Cursor cursor = getActivity().getContentResolver()
+                                     .query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
 
-        String sortOrder = String.format("%s limit 500 ", CallLog.Calls.DATE + " DESC");
-
-        Cursor cursor = getActivity().getContentResolver().query(queryUri, projection, null, null, sortOrder);
-
-        while (cursor.moveToNext()) {
-            String phoneNumber = cursor.getString(cursor.getColumnIndex(CallLog.Calls.NUMBER));
-
-            String title = (cursor.getString(cursor.getColumnIndex(CallLog.Calls.CACHED_NAME)));
-
-            if (phoneNumber == null || title == null) {
-                continue;
+        while (cursor != null && cursor.moveToNext()) {
+            String timeStampStr = cursor.getString(
+                    cursor.getColumnIndex(ContactsContract.Contacts.CONTACT_LAST_UPDATED_TIMESTAMP));
+            if (timeStampStr != null && !timeStampStr.isEmpty()) {
+                // Exclude google contacts etc. by checking to see if there is a number
+                if ("1".equals(cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts.HAS_PHONE_NUMBER)))) {
+                    String id = cursor.getString(cursor.getColumnIndex(ContactsContract.Contacts._ID));
+                    String contactName = cursor.getString(
+                            cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
+                    Uri photoUri = ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI,
+                                                              Long.parseLong(id));
+                    ContactInfo contactInfo = new ContactInfo(id, contactName, photoUri);
+                    contactList.add(contactInfo);
+                }
             }
-
-            String uri = "tel:" + phoneNumber;
-            Intent intent = new Intent(Intent.ACTION_CALL);
-            intent.setData(Uri.parse(uri));
-            String intentUriString = intent.toUri(0);
-
-            contactMap.put(title, intentUriString);
-
         }
-        cursor.close();
-        return contactMap;
+        if (cursor != null) {
+            cursor.close();
+        }
+        Collections.reverse(contactList);
+        return contactList;
     }
 }
