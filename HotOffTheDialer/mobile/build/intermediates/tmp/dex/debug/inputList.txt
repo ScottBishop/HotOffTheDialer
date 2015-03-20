@@ -1,0 +1,9 @@
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/classes/debug
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/support-annotations-21.0.3-36b89597800cf76e570c998138879ee5588a1b11.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/classes-f70b5df75d8101912ec903f9d0a02c7d214b7173.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/butterknife-6.1.0-c4d357cd428140d783358efde918ef4e3e5c4fb4.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/internal_impl-21.0.3-7e9f8b77db49afaf05d34f3292654db12b27dee1.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/classes-186322c589d1ccff79803c304e8846b30fd2d4d6.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/classes-4aa5ca9cf0eb4f4d178c9d8df3d0709f97bad97b.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/classes-dab72aedc36f89f264851d41166cc7ba17725c3a.jar
+/Users/scott.bishop/Documents/HotOffTheNumberPad/HotOffTheNumberPad/mobile/build/intermediates/pre-dexed/debug/classes-00dcb7b4bf0b3d1bbe21cc225dbd627e0c6e022e.jar
