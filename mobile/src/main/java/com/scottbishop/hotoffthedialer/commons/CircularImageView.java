@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthedialer.commons;
+package com.scottbishop.HotOffTheDialer.commons;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -12,7 +12,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
-import com.scottbishop.hotoffthedialer.R;
+import com.scottbishop.HotOffTheDialer.R;
 
 public class CircularImageView extends ImageView {
     private int borderWidth;

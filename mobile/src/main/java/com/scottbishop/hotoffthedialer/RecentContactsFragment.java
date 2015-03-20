@@ -1,6 +1,7 @@
-package com.scottbishop.hotoffthedialer;
+package com.scottbishop.HotOffTheDialer;
 
 import android.content.ContentUris;
+import android.content.Intent;
 import android.database.Cursor;
 import android.net.Uri;
 import android.os.Bundle;
@@ -15,7 +16,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import butterknife.ButterKnife;
 import butterknife.InjectView;
-import com.scottbishop.hotoffthedialer.commons.DividerItemDecoration;
+import butterknife.OnClick;
+import com.scottbishop.HotOffTheDialer.commons.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.Collections;
@@ -31,6 +33,8 @@ public class RecentContactsFragment extends Fragment {
 
     @InjectView(R.id.recycler_view)
     RecyclerView recyclerView;
+    @InjectView(R.id.add_button)
+    View addButton;
 
     public static RecentContactsFragment newInstance() {
         return new RecentContactsFragment();
@@ -91,5 +95,11 @@ public class RecentContactsFragment extends Fragment {
         }
         Collections.reverse(contactList);
         return contactList;
+    }
+
+    @OnClick(R.id.add_button)
+    public void onAddButtonClicked() {
+        Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
+        startActivity(intent);
     }
 }

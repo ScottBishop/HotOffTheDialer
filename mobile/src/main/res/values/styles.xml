@@ -6,10 +6,11 @@
     <style name="AppTheme.Base" parent="Theme.AppCompat.Light.DarkActionBar">
         <!-- Main theme colors -->
         <!--   your app branding color for the app bar -->
-        <item name="android:colorPrimary">@color/primary_material_light</item>
+        <item name="android:colorPrimary">@color/wallet_holo_blue_light</item>
         <!--   darker variant for the status bar and contextual app bars -->
         <item name="android:colorPrimaryDark">@color/wallet_highlighted_text_holo_light</item>
         <!--   theme UI controls like checkboxes and text fields -->
         <item name="android:colorAccent">@color/accent_material_light</item>
+        <!--<item name="android:background">#2196F3</item>-->
     </style>
 </resources>

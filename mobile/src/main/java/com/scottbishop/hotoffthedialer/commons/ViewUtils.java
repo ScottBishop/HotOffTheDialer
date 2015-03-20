@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthedialer.commons;
+package com.scottbishop.HotOffTheDialer.commons;
 
 import android.content.Context;
 import android.content.res.Resources;

@@ -3,4 +3,8 @@
     <dimen name="doublespacing">16dp</dimen>
     <dimen name="spacing">8dp</dimen>
     <dimen name="profile_photo_size">56dp</dimen>
+    <dimen name="diameter">48dp</dimen>
+    <dimen name="elevation_low">1dp</dimen>
+    <dimen name="elevation_high">4dp</dimen>
+    <dimen name="add_button_margin">32dp</dimen>
 </resources>

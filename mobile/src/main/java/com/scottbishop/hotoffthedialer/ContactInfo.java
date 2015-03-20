@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthedialer;
+package com.scottbishop.HotOffTheDialer;
 
 import android.net.Uri;
 

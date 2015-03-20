@@ -1,4 +1,4 @@
-package com.scottbishop.hotoffthedialer;
+package com.scottbishop.HotOffTheDialer;
 
 import android.content.Context;
 import android.content.Intent;
@@ -70,7 +70,7 @@ public class RecentContactsAdapter extends RecyclerView.Adapter<RecentContactsAd
         if (bitmap != null) {
             holder.photoImageView.setImageBitmap(bitmap);
         } else {
-            holder.photoImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.ic_launcher));
+            holder.photoImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.empty_photo));
         }
 
         holder.view.setOnClickListener(new View.OnClickListener() {
