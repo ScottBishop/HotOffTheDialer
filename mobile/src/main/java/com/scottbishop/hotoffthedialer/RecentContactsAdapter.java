@@ -12,11 +12,12 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TextView;
-import butterknife.ButterKnife;
 
 import java.io.BufferedInputStream;
 import java.io.InputStream;
 import java.util.List;
+
+import butterknife.ButterKnife;
 
 /**
  * @author scott.bishop
@@ -65,10 +66,14 @@ public class RecentContactsAdapter extends RecyclerView.Adapter<RecentContactsAd
         holder.nameTextView.setText(item.getName());
 
         InputStream photo_stream = ContactsContract.Contacts.openContactPhotoInputStream(context.getContentResolver(), item.getPhotoUri());
-        BufferedInputStream buf = new BufferedInputStream(photo_stream);
-        Bitmap bitmap = BitmapFactory.decodeStream(buf);
-        if (bitmap != null) {
-            holder.photoImageView.setImageBitmap(bitmap);
+        if (photo_stream != null) {
+            BufferedInputStream buf = new BufferedInputStream(photo_stream);
+            Bitmap bitmap = BitmapFactory.decodeStream(buf);
+            if (bitmap != null) {
+                holder.photoImageView.setImageBitmap(bitmap);
+            } else {
+                holder.photoImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.empty_photo));
+            }
         } else {
             holder.photoImageView.setImageDrawable(context.getResources().getDrawable(R.drawable.empty_photo));
         }

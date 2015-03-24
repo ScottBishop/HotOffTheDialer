@@ -14,22 +14,24 @@ import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import butterknife.ButterKnife;
-import butterknife.InjectView;
-import butterknife.OnClick;
+
 import com.scottbishop.HotOffTheDialer.commons.DividerItemDecoration;
 
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.LinkedHashMap;
 import java.util.List;
+import java.util.Map;
+
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.OnClick;
 
 /**
  * @author scott.bishop
  * @since 3/19/15
  */
 public class RecentContactsFragment extends Fragment {
-
-    private LinearLayoutManager layoutManager;
 
     @InjectView(R.id.recycler_view)
     RecyclerView recyclerView;
@@ -43,7 +45,7 @@ public class RecentContactsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
-        layoutManager = new LinearLayoutManager(getActivity());
+        LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
         recyclerView.setItemAnimator(new DefaultItemAnimator());
@@ -69,7 +71,7 @@ public class RecentContactsFragment extends Fragment {
     }
 
     public List<ContactInfo> getRecentContacts() {
-        List<ContactInfo> contactList = new ArrayList<>();
+        Map<String, ContactInfo> contactMap = new LinkedHashMap<String, ContactInfo>();
 
         Cursor cursor = getActivity().getContentResolver()
                                      .query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
@@ -85,21 +87,36 @@ public class RecentContactsFragment extends Fragment {
                             cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
                     Uri photoUri = ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI,
                                                               Long.parseLong(id));
+
                     ContactInfo contactInfo = new ContactInfo(id, contactName, photoUri);
-                    contactList.add(contactInfo);
+                    // Remove duplicates
+                    if (!contactMap.containsKey(contactName)) {
+                        contactMap.put(contactName, contactInfo);
+                    }
                 }
             }
         }
         if (cursor != null) {
             cursor.close();
         }
+        ArrayList<ContactInfo> contactList = new ArrayList<ContactInfo>(contactMap.values());
         Collections.reverse(contactList);
         return contactList;
     }
 
+    @Override
+    public void onActivityResult(int requestCode, int resultCode, Intent data) {
+        super.onActivityResult(requestCode, resultCode, data);
+        if (requestCode == -1) {
+            getActivity().onBackPressed();
+        }
+    }
+
     @OnClick(R.id.add_button)
     public void onAddButtonClicked() {
-        Intent intent = new Intent(Intent.ACTION_PICK, ContactsContract.Contacts.CONTENT_URI);
-        startActivity(intent);
+        Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
+        intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
+        startActivityForResult(intent, -1);
     }
+
 }
