@@ -16,7 +16,6 @@ public class RecentContactsActivity extends ActionBarActivity {
         setContentView(R.layout.activity_recent_contacts);
         ButterKnife.inject(this);
 
-        getSupportActionBar().setTitle(getString(R.string.recent_contacts));
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
                                        .add(R.id.container, RecentContactsFragment.newInstance())

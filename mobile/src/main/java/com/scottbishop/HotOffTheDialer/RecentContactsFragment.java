@@ -8,12 +8,16 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
+import android.support.v7.app.ActionBarActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.support.v7.widget.Toolbar;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageButton;
+
 import com.scottbishop.HotOffTheDialer.commons.DividerItemDecoration;
 
 import java.util.ArrayList;
@@ -34,8 +38,10 @@ public class RecentContactsFragment extends Fragment {
 
     @InjectView(R.id.recycler_view)
     RecyclerView recyclerView;
-    @InjectView(R.id.add_button)
-    View addButton;
+    @InjectView(R.id.view_fab_button)
+    ImageButton fabButton;
+    @InjectView(R.id.activity_dialer_toolbar)
+    Toolbar mainToolbar;
 
     public static RecentContactsFragment newInstance() {
         return new RecentContactsFragment();
@@ -44,6 +50,12 @@ public class RecentContactsFragment extends Fragment {
     @Override
     public void onActivityCreated(@Nullable Bundle savedInstanceState) {
         super.onActivityCreated(savedInstanceState);
+
+        mainToolbar.setTitleTextColor(getResources().getColor(R.color.theme_dialer_accent));
+        ((ActionBarActivity)getActivity()).setSupportActionBar(mainToolbar);
+        mainToolbar.setTitle(getString(R.string.recent_contacts));
+
+
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
         recyclerView.addItemDecoration(new DividerItemDecoration(getActivity(), DividerItemDecoration.VERTICAL_LIST));
@@ -55,6 +67,7 @@ public class RecentContactsFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View rootView = inflater.inflate(R.layout.fragment_recent_contacts, container, false);
         ButterKnife.inject(this, rootView);
+
         return rootView;
     }
 
@@ -111,7 +124,7 @@ public class RecentContactsFragment extends Fragment {
         }
     }
 
-    @OnClick(R.id.add_button)
+    @OnClick(R.id.view_fab_button)
     public void onAddButtonClicked() {
         Intent intent = new Intent(ContactsContract.Intents.Insert.ACTION);
         intent.setType(ContactsContract.RawContacts.CONTENT_TYPE);
