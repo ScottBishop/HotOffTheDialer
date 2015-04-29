@@ -6,6 +6,7 @@ import android.provider.ContactsContract;
 import android.support.v7.app.ActionBarActivity;
 import android.view.Menu;
 import android.view.MenuItem;
+
 import butterknife.ButterKnife;
 
 public class RecentContactsActivity extends ActionBarActivity {
@@ -18,8 +19,8 @@ public class RecentContactsActivity extends ActionBarActivity {
 
         if (savedInstanceState == null) {
             getSupportFragmentManager().beginTransaction()
-                                       .add(R.id.container, RecentContactsFragment.newInstance())
-                                       .commit();
+                    .add(R.id.container, RecentContactsFragment.newInstance())
+                    .commit();
         }
     }
 

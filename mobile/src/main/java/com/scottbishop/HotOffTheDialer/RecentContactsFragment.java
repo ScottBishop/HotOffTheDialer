@@ -52,8 +52,8 @@ public class RecentContactsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         mainToolbar.setTitleTextColor(getResources().getColor(R.color.theme_dialer_accent));
-        ((ActionBarActivity)getActivity()).setSupportActionBar(mainToolbar);
-        mainToolbar.setTitle(getString(R.string.recent_contacts));
+        ((ActionBarActivity) getActivity()).setSupportActionBar(mainToolbar);
+        ((ActionBarActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.recent_contacts));
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
@@ -86,7 +86,7 @@ public class RecentContactsFragment extends Fragment {
         Map<String, ContactInfo> contactMap = new LinkedHashMap<String, ContactInfo>();
 
         Cursor cursor = getActivity().getContentResolver()
-                                     .query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
+                .query(ContactsContract.Contacts.CONTENT_URI, null, null, null, null);
 
         while (cursor != null && cursor.moveToNext()) {
             String timeStampStr = cursor.getString(
@@ -98,7 +98,7 @@ public class RecentContactsFragment extends Fragment {
                     String contactName = cursor.getString(
                             cursor.getColumnIndex(ContactsContract.Contacts.DISPLAY_NAME));
                     Uri photoUri = ContentUris.withAppendedId(ContactsContract.Contacts.CONTENT_URI,
-                                                              Long.parseLong(id));
+                            Long.parseLong(id));
 
                     ContactInfo contactInfo = new ContactInfo(id, contactName, photoUri);
                     // Remove duplicates

@@ -12,6 +12,7 @@ import android.graphics.drawable.BitmapDrawable;
 import android.graphics.drawable.Drawable;
 import android.util.AttributeSet;
 import android.widget.ImageView;
+
 import com.scottbishop.HotOffTheDialer.R;
 
 public class CircularImageView extends ImageView {
@@ -42,13 +43,13 @@ public class CircularImageView extends ImageView {
         // load the styled attributes and set their properties
         TypedArray attributes = context.obtainStyledAttributes(attrs, R.styleable.CircularImageView, defStyle, 0);
 
-        if(attributes.getBoolean(R.styleable.CircularImageView_border, true)) {
+        if (attributes.getBoolean(R.styleable.CircularImageView_border, true)) {
             int defaultBorderSize = (int) (4 * getContext().getResources().getDisplayMetrics().density + 0.5f);
             setBorderWidth(attributes.getDimensionPixelOffset(R.styleable.CircularImageView_border_width, defaultBorderSize));
             setBorderColor(attributes.getColor(R.styleable.CircularImageView_border_color, Color.WHITE));
         }
 
-        if(attributes.getBoolean(R.styleable.CircularImageView_shadow, false))
+        if (attributes.getBoolean(R.styleable.CircularImageView_shadow, false))
             addShadow();
     }
 
@@ -78,7 +79,7 @@ public class CircularImageView extends ImageView {
         if (image != null) {
 
             canvasSize = canvas.getWidth();
-            if(canvas.getHeight()<canvasSize)
+            if (canvas.getHeight() < canvasSize)
                 canvasSize = canvas.getHeight();
 
             BitmapShader shader = new BitmapShader(Bitmap.createScaledBitmap(image, canvasSize, canvasSize, false), Shader.TileMode.CLAMP, Shader.TileMode.CLAMP);
@@ -146,7 +147,7 @@ public class CircularImageView extends ImageView {
         }
 
         Bitmap bitmap = Bitmap.createBitmap(drawable.getIntrinsicWidth(),
-                                            drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
+                drawable.getIntrinsicHeight(), Bitmap.Config.ARGB_8888);
         Canvas canvas = new Canvas(bitmap);
         drawable.setBounds(0, 0, canvas.getWidth(), canvas.getHeight());
         drawable.draw(canvas);
