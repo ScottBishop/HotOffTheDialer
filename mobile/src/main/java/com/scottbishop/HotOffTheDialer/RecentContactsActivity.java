@@ -3,13 +3,12 @@ package com.scottbishop.HotOffTheDialer;
 import android.content.Intent;
 import android.os.Bundle;
 import android.provider.ContactsContract;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.view.Menu;
 import android.view.MenuItem;
-
 import butterknife.ButterKnife;
 
-public class RecentContactsActivity extends ActionBarActivity {
+public class RecentContactsActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

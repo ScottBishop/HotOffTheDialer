@@ -8,7 +8,7 @@ import android.os.Bundle;
 import android.provider.ContactsContract;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
-import android.support.v7.app.ActionBarActivity;
+import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.DefaultItemAnimator;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
@@ -17,7 +17,9 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageButton;
-
+import butterknife.ButterKnife;
+import butterknife.InjectView;
+import butterknife.OnClick;
 import com.scottbishop.HotOffTheDialer.commons.DividerItemDecoration;
 
 import java.util.ArrayList;
@@ -25,10 +27,6 @@ import java.util.Collections;
 import java.util.LinkedHashMap;
 import java.util.List;
 import java.util.Map;
-
-import butterknife.ButterKnife;
-import butterknife.InjectView;
-import butterknife.OnClick;
 
 /**
  * @author scott.bishop
@@ -52,8 +50,8 @@ public class RecentContactsFragment extends Fragment {
         super.onActivityCreated(savedInstanceState);
 
         mainToolbar.setTitleTextColor(getResources().getColor(R.color.theme_dialer_accent));
-        ((ActionBarActivity) getActivity()).setSupportActionBar(mainToolbar);
-        ((ActionBarActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.recent_contacts));
+        ((AppCompatActivity) getActivity()).setSupportActionBar(mainToolbar);
+        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.recent_contacts));
 
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());

@@ -2,186 +2,172 @@
 <items version="2" >
 
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-base/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="4c93d99d454c975536bbe3b42283eee847f03ea3">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-e41189c1d18b5d7a983709aced845c33044df0f9.jar" />
+        revision="21.1.2"
+        sha1="f2f7ec211ce4d244ee97a57523eeb4526dc3cf8a">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-d2c9c57c786c9d8a7b4530160a043db60c65450e.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="29fd6d3794b71491c2789708cd8d03c71feb8954">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-2811aff76163cfb327db4ac5c1fa6254e766eaa6.jar" />
+        revision="21.1.2"
+        sha1="0180d031a7b54dabb93b4af3869468b55dc938bd">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-336f4028b7a492261ebd381df0ec54179f11dd13.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="0e8228b4bc69c6a2c8d7c18498a77e53417d2574">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-879f6ec229494494fe3318fcebaa8aeea26f70b7.jar" />
+        revision="21.1.2"
+        sha1="3988694bf9d8186ff97ad5cdfa4ed88b5010fe08">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-a5110195565636d197e9f3e733c434085f9ce6ab.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="fb04b12526b0073c7fb1ebb70c5842d82ee95596">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-bb89825a81a23a9ba7b173fe7bac7ba27ae9493c.jar" />
+        revision="21.1.2"
+        sha1="e5b9f5b0aa8dee788beb63d23832cb29ce771343">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-777950b8f824258e2b8b5f462e5df69543c83808.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="3c0b099f9de16b265ecd6122fcb603e7d0d29f90">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-66c998ecdb86fcc56121184d4c9433216e907f44.jar" />
+        revision="21.1.2"
+        sha1="e35fae1b377c23aa5fd2d309a190c2d0f73d54ec">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-a27b45077d5b2d638658109cfa13e4d1934e32b7.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/sdk/extras/android/m2repository/com/android/support/support-annotations/22.1.1/support-annotations-22.1.1.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="4e86306289ace4aa0cfec44a05ed2b410d36989d">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-ea06b1ecdbca8050ae50169bb59d1a3417dcc0ba.jar" />
+        revision="21.1.2"
+        sha1="01d051a6bfb1218b1db2d3a5af0480ac2c25c42a">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/support-annotations-22.1.1-fda694321e21d46aa7196e5c817c5446aad1e781.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-identity/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="41b3870cbe5fa546d8095b5b89d42cb69f3dd175">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-a1ad7d528fd82c36ab601b043baff0d2c3eedee9.jar" />
+        revision="21.1.2"
+        sha1="b48d5c51a9a9e329005106b4667f54948de4d4d8">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-513558116fa2819d0ac2eb01292e15f3e59e8b06.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="9224bc4c54ba95147c7eabd874573763c07cb6be">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-dc694d08a1a3051b2cd755582380f162259b2715.jar" />
+        revision="21.1.2"
+        sha1="6046e5cdaf799120b7c56a5a061d80e8854c4d34">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-d316b8f8623dc2e8bc4672a4fdeb0613213b3e03.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/appcompat-v7/22.1.1/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="d84409890828e07d344a3b9b1da545dba9897b51">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-01545c099f2d5853c6c47aacbced09aa0f741a21.jar" />
+        revision="21.1.2"
+        sha1="a3ff3c506644c820eb2bdf06e8339f72be578551">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-34d86ab61d5814d9aaf2599c18737a7f8af3e829.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="17f8750d5c0749e44dd7c54aa390d9c937803825">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-fefcae64ac35d358bce84d775bd23b940b713c00.jar" />
+        revision="21.1.2"
+        sha1="b2c07cdb814fe988ad05f7b4d767a841514a5991">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-a5e57bab115301ea49f6fe261d11d90ac6e2744a.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wallet/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-plus/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="a96b762bde4139de855735f175ec4d17dca55a6d">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-cb61f52a2e032d0452040829f446e4fb128e46b6.jar" />
+        revision="21.1.2"
+        sha1="59652857a825fff0de62166fca1bc9553cc01abb">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-11b6261878888fefdcdecc59f86436db6ad234db.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-location/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="73ccb92b70112f2e463e415ef8d7275de7da6516">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-96102922218bb01b62656678d23c3e0ebffa7770.jar" />
+        revision="21.1.2"
+        sha1="5ea948d825957be6c4358c48422bee60eef2d487">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-f098fcf19a3aeda322e3dc11cc274128b66a7ebc.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appstate/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appinvite/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="7ff613bf78ab057293892fdbd4169eda899c89b9">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-d7377a12b66e60124643bccde7630e56b4e465e0.jar" />
+        revision="21.1.2"
+        sha1="bb36004beb02b69562cbec9aa7d6a3cf16bf5d1b">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-91c9ee66278d94f80ff318cd9620f7dcecaed1f8.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/libs/internal_impl-22.1.1.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="c976518693e89ad44fbfccfc654941eaec198d08">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-91f41a9933fe1d4ca31b8fd237013874ea4b6ece.jar" />
+        revision="21.1.2"
+        sha1="9e070ad32b2700b0343e8e0cccc437733d91ba3a">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/internal_impl-22.1.1-e25c59ac64b101ab2a18f3064e21c52e6e17b9e0.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-analytics/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="1c5a76debf0c2857ccad422c4a80ed785982f8df">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-164db76e3fa55842ff576611b124ba77e6a229c1.jar" />
+        revision="21.1.2"
+        sha1="9c9dea9e85aceb09d95df5e6f7bc8a43fc286068">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-f4d031fb1db7526a83542e7cc21b8b3b83ac2513.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-cast/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-drive/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="4cd0b093824b3228fffc21ea369b98d0b1db6566">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-43c14b10cdabf8efd7e03f72cc46cf23ac51d0b2.jar" />
+        revision="21.1.2"
+        sha1="a0ce76dfaccbfbd6c551ed2174280aaabe60fe47">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-5ec19b8557596fbfe5523cde910bfbcab5c662a1.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="055783146ba9654a725442563be78cad303aad1f">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-99f712e6a81c9c50a0c8133a17fb747bb35088dc.jar" />
+        revision="21.1.2"
+        sha1="e5bf453b070c1e39297986144960e45afa0fdfad">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-22e908f53720aa187f8f9df880186c0f68ea1ac2.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/22.0.0/support-annotations-22.0.0.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-panorama/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="685d0b2c590447e85284ed84712cb363ba04eff8">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/support-annotations-22.0.0-a76ecc28c14c414acbb56f96126edb13bd56c41a.jar" />
+        revision="21.1.2"
+        sha1="565a01f90f1529f73362707c4c185d0623a68782">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-d4b5eaf815f58db230a40b7edb032a6c084a6f79.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/6.1.0/63735f48b82bcd24cdd33821342428252eb1ca5a/butterknife-6.1.0.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-gcm/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="63735f48b82bcd24cdd33821342428252eb1ca5a">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/butterknife-6.1.0-57180b4aac0eb37b6dbb6dbc364c14967fe5340d.jar" />
+        revision="21.1.2"
+        sha1="7215ac1f2fca947b9415a6ee2a1bf991364aab24">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-3c9e036084e8713b81cff02c14d638abba65d687.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/recyclerview-v7/21.0.3/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/22.1.1/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="4b8945fc23a7461c6fdde15753456d64b0a9358b">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-789bfe18a23cdf21f79aa67429422c31d72a5a6c.jar" />
+        revision="21.1.2"
+        sha1="c95ba8152923e4872e86a82cfcba9a51c0214328">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-95c9132a1fd8c0ff5441adbf6bb2935ae5a4e971.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-appindexing/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-games/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="a08d65794b844d8e7540bf9a33859bf3b2482d7f">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-03f1dcf35b4f6033c0c359daf1217a4efaa1be5b.jar" />
+        revision="21.1.2"
+        sha1="3b4ff5c39dace8f3b4ab4cab8191785547a0815f">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-e8baeb640d0c340bcbd84ba1592a644866c86b5c.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-ads/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-fitness/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="e3d791b42eaa90416cd0b2d2e608092794a3baa4">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-c6315154fbca4c4e3e79f5204ac5efb6ac4d9ab7.jar" />
+        revision="21.1.2"
+        sha1="4f4fe3c23776540625f3c2844152a7510fddf9f1">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-595e902bab6a0ed0c436bc494a29db785c67d4da.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-nearby/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-maps/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="ef5f051e7308febe289dc93c67c5f32785b4260a">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-c92c4cc567ccf139d3b27467b9b757f4ba9941fb.jar" />
+        revision="21.1.2"
+        sha1="fe3e0c6de7cceed888b277487238b6af9a1cc299">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-644a1c62bc1d2b5f245538d62f46c0c417963af7.jar" />
     </item>
     <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-wearable/7.0.0/classes.jar"
+        jar="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.google.android.gms/play-services-safetynet/7.3.0/classes.jar"
         jumboMode="false"
-        revision="21.0.0"
-        sha1="3033cc3a2c68dff3e5b646d6d084bdbdf7d00b25">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-bc30f485f57ad416a15a750c98c38d0d88fd52f8.jar" />
-    </item>
-    <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/cardview-v7/21.0.3/classes.jar"
-        jumboMode="false"
-        revision="21.0.0"
-        sha1="00b0b7233e1ec64acebfac40d4983d32d4712426">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-f92c9c475902bdfefadca6b31f00b861bc169b07.jar" />
-    </item>
-    <item
-        jar="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/exploded-aar/com.android.support/support-v4/22.0.0/libs/internal_impl-22.0.0.jar"
-        jumboMode="false"
-        revision="21.0.0"
-        sha1="b5b92f469d515a13d778900f6d50c03d12f35504">
-        <dex dex="/Users/scottbishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/internal_impl-22.0.0-e1896f43fa77c132f14329e2b504b361e21f9b22.jar" />
+        revision="21.1.2"
+        sha1="0708ef60917bf94913fe9ef972a655b99462dca7">
+        <dex dex="/Users/scott.bishop/Documents/HotOffTheDialer/mobile/build/intermediates/pre-dexed/debug/classes-5c888e1c8ef61dfc5e4559f653aecb6da39721d0.jar" />
     </item>
 
 </items>
