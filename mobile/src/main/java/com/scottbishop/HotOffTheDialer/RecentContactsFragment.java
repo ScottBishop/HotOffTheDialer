@@ -51,8 +51,7 @@ public class RecentContactsFragment extends Fragment {
 
         mainToolbar.setTitleTextColor(getResources().getColor(R.color.theme_dialer_accent));
         ((AppCompatActivity) getActivity()).setSupportActionBar(mainToolbar);
-        ((AppCompatActivity) getActivity()).getSupportActionBar().setTitle(getString(R.string.recent_contacts));
-
+        mainToolbar.setTitle(getString(R.string.recent_contacts));
 
         LinearLayoutManager layoutManager = new LinearLayoutManager(getActivity());
         recyclerView.setLayoutManager(layoutManager);
@@ -109,7 +108,7 @@ public class RecentContactsFragment extends Fragment {
         if (cursor != null) {
             cursor.close();
         }
-        ArrayList<ContactInfo> contactList = new ArrayList<ContactInfo>(contactMap.values());
+        ArrayList<ContactInfo> contactList = new ArrayList<>(contactMap.values());
         Collections.reverse(contactList);
         return contactList;
     }
